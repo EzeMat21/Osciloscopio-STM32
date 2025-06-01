@@ -28,8 +28,7 @@ nuevamente al estado guardando_en_ping. En esta transición, el puntero
 escritura vuelve a apuntar al buffer ping y se envia por el puerto uart
 el contenido del buffer pong.
 
-<img src="![WhatsApp Image 2024-12-18 at 22 35 58](https://github.com/user-attachments/assets/3ae38dcb-63cc-428b-965c-a25c7fb8b744)" width="200"/>
-
+<img src="assets/WhatsApp Image 2024-12-18 at 22.35.58.jpeg" width="300"/> <img src="assets/WhatsApp Image 2024-12-18 at 18.23.42.jpeg" width="150"/>
 
 Bibliografía o links consultados: Mastering STM32: Cap 12:
 Analog-To-Digital Conversion STM32F103x8 Reference Manual Interrupciones
