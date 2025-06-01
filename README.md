@@ -28,7 +28,11 @@ nuevamente al estado guardando_en_ping. En esta transición, el puntero
 escritura vuelve a apuntar al buffer ping y se envia por el puerto uart
 el contenido del buffer pong.
 
+<img src="![WhatsApp Image 2024-12-18 at 22 35 58](https://github.com/user-attachments/assets/3ae38dcb-63cc-428b-965c-a25c7fb8b744)" width="200"/>
+
+
 Bibliografía o links consultados: Mastering STM32: Cap 12:
 Analog-To-Digital Conversion STM32F103x8 Reference Manual Interrupciones
 por timer:
 https://deepbluembedded.com/stm32-timer-interrupt-hal-example-timer-mode-lab/
+
