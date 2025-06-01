@@ -1,19 +1,14 @@
 TP1 ESPECIAL OSCILOSCOPIO
 
-Implemente un "osciloscopio" que permita tomar medidas de tensión del
-ADC a una tasa mínima de 1 kHz, almacenarlas en un buffer tipo
-ping-pong, y enviarlas por UART a la PC, donde se visualizarán con el
-programa Serial Plot (o similar)
+Los datos son adquiridos a través del ADC a una tasa máxima alcanzada de conversión de 58,8kHz.
+Los datos adquiridos son enviados por el puerto UART y visualizados en el programa SerialPlot.
 (https://hackaday.io/project/5334-serialplot-realtime-plotting-software
 
-La tasa máxima alcanzada de conversión es de 58,8kHz.
 Utilizando un buffer ping pong, se muestran por pantalla los valores de
 tensión obtenidos del ADC. El ADC escribe sobre el buffer PING mientras
 el puerto UART transmite el contenido del PONG, y luego se intercambian
 es decir, el ADC comienza a escribir sobre el buffer PONG y el puerto
-UART lo hace sobre el buffer PING. La tasa de adquisión del ADC es de
-1kHz y el UART transmite los datos cada vez que se llena. El uart se
-configuro a una tasa de 950.000 baud rate.
+UART lo hace sobre el buffer PING. El UART transmite los datos cada vez que se llena, configurandolo a una tasa de 950.000 bits/s.
 
 La maquina de estados tiene 14 estados. Podemos navegar por un menú a través de una pantalla TFT
 donde podemos configurar la resolución de los datos, el tipo y umbral del trigger así como también la cantidad de muestras una vez disparado el trigger.
